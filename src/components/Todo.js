@@ -8,7 +8,7 @@ const Todo = (props) => {
   const completeHandler = () => {
     props.setTodos(
       props.todos.map((t) => {
-        if (t.id == Number(props.todo.id)) {
+        if (t.id === Number(props.todo.id)) {
           return {
             ...t,
             completed: !t.completed,
